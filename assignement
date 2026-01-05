@@ -1,0 +1,61 @@
+# calculate the perimeter and area of a rectangle with sides 4 and 8
+width = 4
+length = 8
+perimeter =2*(length + width)
+area =length*width
+print("perimeter :",perimeter)
+print("area:", area)
+
+#celsius conveted in fahrenheit conversions
+celsius = int(input  ("Please enter a value for the temperature:"))
+fahrenheit = (celsius * 9/5) + 32
+print("The value in fahrenheit of the temperature is :",fahrenheit)
+
+#fahrenheit conveted in celsius coversions 
+fahrenheit = int(input ("Plese enter a value for the temperature:"))
+celsius = (fahrenheit - 32) * 5/9
+print("The value in fahrenheit of the temperature is :",celsius)
+
+# Optional Challenge: Split a 2-digit number into tens and ones
+
+number_input = input("Please enter a 2-digit number: ")
+if number_input.isdigit() and 10 <= int(number_input) <= 99:
+    number = int(number_input)
+    tens = number // 10   
+    ones = number % 10 
+    print("Tens digit:", tens)
+    print("Ones digit:", ones)
+else:
+    print("Error: Please enter a valid 2-digit number.")
+
+#the student passes or fails and assig him a grade from A to F
+name = input("Please enter your name :")
+surname = input("Please enter your surname :")
+score = int(input("Please enter your score :"))
+
+name = input("Please enter your name: ")
+surname = input("Please enter your surname: ")
+score = int(input("Please enter your score: "))
+
+if score >= 95:
+    grade = "A"
+elif score >= 80:
+    grade = "B"
+elif score >= 70:
+    grade = "C"
+elif score >= 60:
+    grade = "D"
+else:
+    grade = "F"
+
+if score >= 60:
+    result = "passed"
+else:
+    result = "failed"
+
+print("\n--- Student Result ---")
+print("Name:", name)
+print("Surname:", surname)
+print("Score:", score)
+print("Grade:", grade)
+print("You have", result)
